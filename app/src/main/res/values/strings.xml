@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TicTacToe</string>
+    <string name="turnwin">"'s Turn!"</string>
+    <string name="win">" Wins!"</string>
 </resources>

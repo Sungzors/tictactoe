@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.sungwon.tictactoe.Tictactoe_Layout"
+    android:layout_gravity="center"
     >
 
     <LinearLayout
@@ -21,13 +22,16 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:id="@+id/playerNameT"
-            android:textSize="40sp" />
+            android:textSize="40sp"
+            android:textAlignment="textEnd"
+            android:layout_gravity="end"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="'s Turn!"
+            android:text="@string/turnwin"
             android:paddingRight="20dp"
-            android:textSize="40sp"/>
+            android:textSize="40sp"
+            android:id="@+id/turnwin"/>
 
     </LinearLayout>
 
@@ -37,7 +41,9 @@
         android:layout_below="@id/toplay"
         android:paddingLeft="12dp"
         android:paddingRight="12dp"
-        android:paddingTop="40dp">
+        android:paddingTop="150dp"
+        android:layout_gravity="center_horizontal"
+        >
 
     <Button
         android:layout_width="@dimen/tictactoe"
@@ -103,4 +109,4 @@
         android:id="@+id/button9"/>
 
     </GridLayout>
-</RelativeLayout>
+</FrameLayout>
