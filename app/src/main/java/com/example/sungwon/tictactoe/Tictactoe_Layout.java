@@ -21,6 +21,7 @@ public class Tictactoe_Layout extends AppCompatActivity {
     Button mButton9;
     static int count = 0;
     Button mReset;
+    private static final String KEY_TEXT_VALUE = "textValue";
 
 
 
@@ -43,7 +44,7 @@ public class Tictactoe_Layout extends AppCompatActivity {
         Intent intent = getIntent();
         final String p1 = intent.getStringExtra("player1");
         final String p2 = intent.getStringExtra("player2");
-        final CharSequence buttonchar1 = mButton1.getText();
+        CharSequence buttonchar1 = mButton1.getText();
         CharSequence buttonchar2 = mButton2.getText();
         CharSequence buttonchar3 = mButton3.getText();
         CharSequence buttonchar4 = mButton4.getText();
@@ -54,7 +55,18 @@ public class Tictactoe_Layout extends AppCompatActivity {
         CharSequence buttonchar9 = mButton9.getText();
         final TicTacToe ttt = new TicTacToe(buttonchar1, buttonchar2, buttonchar3, buttonchar4, buttonchar5, buttonchar6, buttonchar7, buttonchar8, buttonchar9);
         mPlayerNameT.setText(p1);
-
+//        if (savedInstanceState != null) {
+//            CharSequence savedText = savedInstanceState.getCharSequence(KEY_TEXT_VALUE);
+//            mButton1.setText(savedText);
+//            mButton2.setText(savedText);
+//            mButton3.setText(savedText);
+//            mButton4.setText(savedText);
+//            mButton5.setText(savedText);
+//            mButton6.setText(savedText);
+//            mButton7.setText(savedText);
+//            mButton8.setText(savedText);
+//            mButton9.setText(savedText);
+//        }
 
         mButton1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -499,4 +511,17 @@ public class Tictactoe_Layout extends AppCompatActivity {
             mButton9.setEnabled(false);
         }
     }
+
+//    protected void onSaveInstanceState (Bundle outState) {
+//        super.onSaveInstanceState(outState);
+//        outState.putCharSequence(KEY_TEXT_VALUE, mButton1.getText());
+//        outState.putCharSequence(KEY_TEXT_VALUE, mButton2.getText());
+//        outState.putCharSequence(KEY_TEXT_VALUE, mButton3.getText());
+//        outState.putCharSequence(KEY_TEXT_VALUE, mButton4.getText());
+//        outState.putCharSequence(KEY_TEXT_VALUE, mButton5.getText());
+//        outState.putCharSequence(KEY_TEXT_VALUE, mButton6.getText());
+//        outState.putCharSequence(KEY_TEXT_VALUE, mButton7.getText());
+//        outState.putCharSequence(KEY_TEXT_VALUE, mButton8.getText());
+//        outState.putCharSequence(KEY_TEXT_VALUE, mButton9.getText());
+//    }
 }
