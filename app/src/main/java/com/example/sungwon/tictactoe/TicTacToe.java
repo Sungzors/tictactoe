@@ -5,7 +5,6 @@ package com.example.sungwon.tictactoe;
  */
 public class TicTacToe {
 
-
     CharSequence mButton1;
     CharSequence mButton2;
     CharSequence mButton3;
@@ -15,6 +14,9 @@ public class TicTacToe {
     CharSequence mButton7;
     CharSequence mButton8;
     CharSequence mButton9;
+    char winning = 'l';
+    CharSequence[] buttonArray = {mButton1, mButton2, mButton3, mButton4, mButton5, mButton6, mButton7, mButton8, mButton9};
+    
 
     public TicTacToe(CharSequence mButton1, CharSequence mButton2, CharSequence mButton3, CharSequence mButton4, CharSequence mButton5, CharSequence mButton6, CharSequence mButton7, CharSequence mButton8, CharSequence mButton9) {
         this.mButton1 = mButton1;
@@ -102,64 +104,65 @@ public class TicTacToe {
     public void setmButton9(CharSequence mButton9) {
         this.mButton9 = mButton9;
     }
+    
 
-    public boolean hasWon(){
-        boolean winning = false;
+    public char hasWon(){
+
         if (mButton1.toString().equals("O")) {
             if (mButton4.toString().equals("O") && mButton7.toString().equals("O")) {
-                winning = true;
+                winning = 'w';
             } else if (mButton2.toString().equals("O") && mButton3.toString().equals("O")) {
-                winning = true;
+                winning = 'w';
             } else if (mButton5.toString().equals("O") && mButton9.toString().equals("O")) {
-                winning = true;
+                winning = 'w';
             }
         } else if (mButton1.toString().equals("X")) {
             if (mButton4.toString().equals("X") && mButton7.toString().equals("X")) {
-                winning = true;
+                winning = 'w';
             } else if (mButton2.toString().equals("X") && mButton3.toString().equals("X")) {
-                winning = true;
+                winning = 'w';
             } else if (mButton5.toString().equals("X") && mButton9.toString().equals("X")) {
-                winning = true;
+                winning = 'w';
             }
         }
         if (mButton2.toString().equals("O")) {
             if (mButton5.toString().equals("O") && mButton8.toString().equals("O")) {
-                winning = true;
+                winning = 'w';
             }
         } else if (mButton2.toString().equals("X")) {
             if (mButton5.toString().equals("X") && mButton8.toString().equals("X")) {
-                winning = true;
+                winning = 'w';
             }
         }
         if (mButton3.toString().equals("O")) {
             if (mButton6.toString().equals("O") && mButton9.toString().equals("O")) {
-                winning = true;
+                winning = 'w';
             } else if (mButton5.toString().equals("O") && mButton7.toString().equals("O")) {
-                winning = true;
+                winning = 'w';
             }
         } else if (mButton3.toString().equals("X")) {
             if (mButton6.toString().equals("X") && mButton9.toString().equals("X")) {
-                winning = true;
+                winning = 'w';
             } else if (mButton5.toString().equals("X") && mButton7.toString().equals("X")) {
-                winning = true;
+                winning = 'w';
             }
         }
         if (mButton4.toString().equals("O")) {
             if (mButton5.toString().equals("O") && mButton6.toString().equals("O")) {
-                winning = true;
+                winning = 'w';
             }
         } else if (mButton4.toString().equals("X")) {
             if (mButton5.toString().equals("X") && mButton6.toString().equals("X")) {
-                winning = true;
+                winning = 'w';
             }
         }
         if (mButton7.toString().equals("O")) {
             if (mButton8.toString().equals("O") && mButton9.toString().equals("O")) {
-                winning = true;
+                winning = 'w';
             }
         } else if (mButton7.toString().equals("X")) {
             if (mButton8.toString().equals("X") && mButton9.toString().equals("X")) {
-                winning = true;
+                winning = 'w';
             }
         }
         return winning;
