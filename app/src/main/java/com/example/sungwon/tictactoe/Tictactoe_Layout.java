@@ -20,6 +20,7 @@ public class Tictactoe_Layout extends AppCompatActivity {
     Button mButton8;
     Button mButton9;
     static int count = 0;
+    Button mReset;
 
 
 
@@ -38,10 +39,11 @@ public class Tictactoe_Layout extends AppCompatActivity {
         mButton7 = (Button)findViewById(R.id.button7);
         mButton8 = (Button)findViewById(R.id.button8);
         mButton9 = (Button)findViewById(R.id.button9);
+        mReset = (Button)findViewById(R.id.resetButton);
         Intent intent = getIntent();
         final String p1 = intent.getStringExtra("player1");
         final String p2 = intent.getStringExtra("player2");
-        CharSequence buttonchar1 = mButton1.getText();
+        final CharSequence buttonchar1 = mButton1.getText();
         CharSequence buttonchar2 = mButton2.getText();
         CharSequence buttonchar3 = mButton3.getText();
         CharSequence buttonchar4 = mButton4.getText();
@@ -62,6 +64,15 @@ public class Tictactoe_Layout extends AppCompatActivity {
                     mButton1.setText("O");
                     if (ttt.hasWon()=='w') {
                         mTurnWin.setText(R.string.win);
+                        mButton1.setEnabled(false);
+                        mButton2.setEnabled(false);
+                        mButton3.setEnabled(false);
+                        mButton4.setEnabled(false);
+                        mButton5.setEnabled(false);
+                        mButton6.setEnabled(false);
+                        mButton7.setEnabled(false);
+                        mButton8.setEnabled(false);
+                        mButton9.setEnabled(false);
                     } else if(ttt.hasWon()=='l'){
                         mPlayerNameT.setText(p2);
                         countClick();
@@ -72,6 +83,15 @@ public class Tictactoe_Layout extends AppCompatActivity {
                     mButton1.setText("X");
                     if (ttt.hasWon()=='w') {
                         mTurnWin.setText(R.string.win);
+                        mButton1.setEnabled(false);
+                        mButton2.setEnabled(false);
+                        mButton3.setEnabled(false);
+                        mButton4.setEnabled(false);
+                        mButton5.setEnabled(false);
+                        mButton6.setEnabled(false);
+                        mButton7.setEnabled(false);
+                        mButton8.setEnabled(false);
+                        mButton9.setEnabled(false);
                     } else if(ttt.hasWon()=='l'){
                         mPlayerNameT.setText(p1);
                         countClick();
@@ -87,6 +107,15 @@ public class Tictactoe_Layout extends AppCompatActivity {
                     mButton2.setText("O");
                     if (ttt.hasWon()=='w') {
                         mTurnWin.setText(R.string.win);
+                        mButton1.setEnabled(false);
+                        mButton2.setEnabled(false);
+                        mButton3.setEnabled(false);
+                        mButton4.setEnabled(false);
+                        mButton5.setEnabled(false);
+                        mButton6.setEnabled(false);
+                        mButton7.setEnabled(false);
+                        mButton8.setEnabled(false);
+                        mButton9.setEnabled(false);
                     } else if(ttt.hasWon()=='l'){
                         mPlayerNameT.setText(p2);
                         countClick();
@@ -97,6 +126,15 @@ public class Tictactoe_Layout extends AppCompatActivity {
                     mButton2.setText("X");
                     if (ttt.hasWon()=='w') {
                         mTurnWin.setText(R.string.win);
+                        mButton1.setEnabled(false);
+                        mButton2.setEnabled(false);
+                        mButton3.setEnabled(false);
+                        mButton4.setEnabled(false);
+                        mButton5.setEnabled(false);
+                        mButton6.setEnabled(false);
+                        mButton7.setEnabled(false);
+                        mButton8.setEnabled(false);
+                        mButton9.setEnabled(false);
                     } else if(ttt.hasWon()=='l'){
                         mPlayerNameT.setText(p1);
                         countClick();
@@ -112,6 +150,15 @@ public class Tictactoe_Layout extends AppCompatActivity {
                     mButton3.setText("O");
                     if (ttt.hasWon()=='w') {
                         mTurnWin.setText(R.string.win);
+                        mButton1.setEnabled(false);
+                        mButton2.setEnabled(false);
+                        mButton3.setEnabled(false);
+                        mButton4.setEnabled(false);
+                        mButton5.setEnabled(false);
+                        mButton6.setEnabled(false);
+                        mButton7.setEnabled(false);
+                        mButton8.setEnabled(false);
+                        mButton9.setEnabled(false);
                     } else if(ttt.hasWon()=='l'){
                         mPlayerNameT.setText(p2);
                         countClick();
@@ -122,6 +169,15 @@ public class Tictactoe_Layout extends AppCompatActivity {
                     mButton3.setText("X");
                     if (ttt.hasWon()=='w') {
                         mTurnWin.setText(R.string.win);
+                        mButton1.setEnabled(false);
+                        mButton2.setEnabled(false);
+                        mButton3.setEnabled(false);
+                        mButton4.setEnabled(false);
+                        mButton5.setEnabled(false);
+                        mButton6.setEnabled(false);
+                        mButton7.setEnabled(false);
+                        mButton8.setEnabled(false);
+                        mButton9.setEnabled(false);
                     } else if(ttt.hasWon()=='l'){
                         mPlayerNameT.setText(p1);
                         countClick();
@@ -137,6 +193,15 @@ public class Tictactoe_Layout extends AppCompatActivity {
                     mButton4.setText("O");
                     if (ttt.hasWon()=='w') {
                         mTurnWin.setText(R.string.win);
+                        mButton1.setEnabled(false);
+                        mButton2.setEnabled(false);
+                        mButton3.setEnabled(false);
+                        mButton4.setEnabled(false);
+                        mButton5.setEnabled(false);
+                        mButton6.setEnabled(false);
+                        mButton7.setEnabled(false);
+                        mButton8.setEnabled(false);
+                        mButton9.setEnabled(false);
                     } else if(ttt.hasWon()=='l'){
                         mPlayerNameT.setText(p2);
                         countClick();
@@ -147,6 +212,15 @@ public class Tictactoe_Layout extends AppCompatActivity {
                     mButton4.setText("X");
                     if (ttt.hasWon()=='w') {
                         mTurnWin.setText(R.string.win);
+                        mButton1.setEnabled(false);
+                        mButton2.setEnabled(false);
+                        mButton3.setEnabled(false);
+                        mButton4.setEnabled(false);
+                        mButton5.setEnabled(false);
+                        mButton6.setEnabled(false);
+                        mButton7.setEnabled(false);
+                        mButton8.setEnabled(false);
+                        mButton9.setEnabled(false);
                     } else if(ttt.hasWon()=='l'){
                         mPlayerNameT.setText(p1);
                         countClick();
@@ -162,6 +236,15 @@ public class Tictactoe_Layout extends AppCompatActivity {
                     mButton5.setText("O");
                     if (ttt.hasWon()=='w') {
                         mTurnWin.setText(R.string.win);
+                        mButton1.setEnabled(false);
+                        mButton2.setEnabled(false);
+                        mButton3.setEnabled(false);
+                        mButton4.setEnabled(false);
+                        mButton5.setEnabled(false);
+                        mButton6.setEnabled(false);
+                        mButton7.setEnabled(false);
+                        mButton8.setEnabled(false);
+                        mButton9.setEnabled(false);
                     } else if(ttt.hasWon()=='l'){
                         mPlayerNameT.setText(p2);
                         countClick();
@@ -172,6 +255,15 @@ public class Tictactoe_Layout extends AppCompatActivity {
                     mButton5.setText("X");
                     if (ttt.hasWon()=='w') {
                         mTurnWin.setText(R.string.win);
+                        mButton1.setEnabled(false);
+                        mButton2.setEnabled(false);
+                        mButton3.setEnabled(false);
+                        mButton4.setEnabled(false);
+                        mButton5.setEnabled(false);
+                        mButton6.setEnabled(false);
+                        mButton7.setEnabled(false);
+                        mButton8.setEnabled(false);
+                        mButton9.setEnabled(false);
                     } else if(ttt.hasWon()=='l'){
                         mPlayerNameT.setText(p1);
                         countClick();
@@ -187,6 +279,15 @@ public class Tictactoe_Layout extends AppCompatActivity {
                     mButton6.setText("O");
                     if (ttt.hasWon()=='w') {
                         mTurnWin.setText(R.string.win);
+                        mButton1.setEnabled(false);
+                        mButton2.setEnabled(false);
+                        mButton3.setEnabled(false);
+                        mButton4.setEnabled(false);
+                        mButton5.setEnabled(false);
+                        mButton6.setEnabled(false);
+                        mButton7.setEnabled(false);
+                        mButton8.setEnabled(false);
+                        mButton9.setEnabled(false);
                     } else if(ttt.hasWon()=='l'){
                         mPlayerNameT.setText(p2);
                         countClick();
@@ -197,6 +298,15 @@ public class Tictactoe_Layout extends AppCompatActivity {
                     mButton6.setText("X");
                     if (ttt.hasWon()=='w') {
                         mTurnWin.setText(R.string.win);
+                        mButton1.setEnabled(false);
+                        mButton2.setEnabled(false);
+                        mButton3.setEnabled(false);
+                        mButton4.setEnabled(false);
+                        mButton5.setEnabled(false);
+                        mButton6.setEnabled(false);
+                        mButton7.setEnabled(false);
+                        mButton8.setEnabled(false);
+                        mButton9.setEnabled(false);
                     } else if(ttt.hasWon()=='l'){
                         mPlayerNameT.setText(p1);
                         countClick();
@@ -212,6 +322,15 @@ public class Tictactoe_Layout extends AppCompatActivity {
                     mButton7.setText("O");
                     if (ttt.hasWon()=='w') {
                         mTurnWin.setText(R.string.win);
+                        mButton1.setEnabled(false);
+                        mButton2.setEnabled(false);
+                        mButton3.setEnabled(false);
+                        mButton4.setEnabled(false);
+                        mButton5.setEnabled(false);
+                        mButton6.setEnabled(false);
+                        mButton7.setEnabled(false);
+                        mButton8.setEnabled(false);
+                        mButton9.setEnabled(false);
                     } else if(ttt.hasWon()=='l'){
                         mPlayerNameT.setText(p2);
                         countClick();
@@ -222,6 +341,15 @@ public class Tictactoe_Layout extends AppCompatActivity {
                     mButton7.setText("X");
                     if (ttt.hasWon()=='w') {
                         mTurnWin.setText(R.string.win);
+                        mButton1.setEnabled(false);
+                        mButton2.setEnabled(false);
+                        mButton3.setEnabled(false);
+                        mButton4.setEnabled(false);
+                        mButton5.setEnabled(false);
+                        mButton6.setEnabled(false);
+                        mButton7.setEnabled(false);
+                        mButton8.setEnabled(false);
+                        mButton9.setEnabled(false);
                     } else if(ttt.hasWon()=='l'){
                         mPlayerNameT.setText(p1);
                         countClick();
@@ -237,6 +365,15 @@ public class Tictactoe_Layout extends AppCompatActivity {
                     mButton8.setText("O");
                     if (ttt.hasWon()=='w') {
                         mTurnWin.setText(R.string.win);
+                        mButton1.setEnabled(false);
+                        mButton2.setEnabled(false);
+                        mButton3.setEnabled(false);
+                        mButton4.setEnabled(false);
+                        mButton5.setEnabled(false);
+                        mButton6.setEnabled(false);
+                        mButton7.setEnabled(false);
+                        mButton8.setEnabled(false);
+                        mButton9.setEnabled(false);
                     } else if(ttt.hasWon()=='l'){
                         mPlayerNameT.setText(p2);
                         countClick();
@@ -247,6 +384,15 @@ public class Tictactoe_Layout extends AppCompatActivity {
                     mButton8.setText("X");
                     if (ttt.hasWon()=='w') {
                         mTurnWin.setText(R.string.win);
+                        mButton1.setEnabled(false);
+                        mButton2.setEnabled(false);
+                        mButton3.setEnabled(false);
+                        mButton4.setEnabled(false);
+                        mButton5.setEnabled(false);
+                        mButton6.setEnabled(false);
+                        mButton7.setEnabled(false);
+                        mButton8.setEnabled(false);
+                        mButton9.setEnabled(false);
                     } else if(ttt.hasWon()=='l'){
                         mPlayerNameT.setText(p1);
                         countClick();
@@ -262,8 +408,18 @@ public class Tictactoe_Layout extends AppCompatActivity {
                     mButton9.setText("O");
                     if (ttt.hasWon()=='w') {
                         mTurnWin.setText(R.string.win);
+                        mButton1.setEnabled(false);
+                        mButton2.setEnabled(false);
+                        mButton3.setEnabled(false);
+                        mButton4.setEnabled(false);
+                        mButton5.setEnabled(false);
+                        mButton6.setEnabled(false);
+                        mButton7.setEnabled(false);
+                        mButton8.setEnabled(false);
+                        mButton9.setEnabled(false);
                     } else if(ttt.hasWon()=='l'){
                         mPlayerNameT.setText(p2);
+                        countClick();
                     }
 
                 } else if (mPlayerNameT.getText().toString().equals(p2)){
@@ -271,6 +427,15 @@ public class Tictactoe_Layout extends AppCompatActivity {
                     mButton9.setText("X");
                     if (ttt.hasWon()=='w') {
                         mTurnWin.setText(R.string.win);
+                        mButton1.setEnabled(false);
+                        mButton2.setEnabled(false);
+                        mButton3.setEnabled(false);
+                        mButton4.setEnabled(false);
+                        mButton5.setEnabled(false);
+                        mButton6.setEnabled(false);
+                        mButton7.setEnabled(false);
+                        mButton8.setEnabled(false);
+                        mButton9.setEnabled(false);
                     } else if(ttt.hasWon()=='l'){
                         mPlayerNameT.setText(p1);
                         countClick();
@@ -279,7 +444,42 @@ public class Tictactoe_Layout extends AppCompatActivity {
 
             }
         });
-        
+        mReset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                count = 0;
+                ttt.winning = 'l';
+                mTurnWin.setText(R.string.turnwin);
+                ttt.setmButton1("");
+                mButton1.setText("");
+                ttt.setmButton2("");
+                mButton2.setText("");
+                ttt.setmButton3("");
+                mButton3.setText("");
+                ttt.setmButton4("");
+                mButton4.setText("");
+                ttt.setmButton5("");
+                mButton5.setText("");
+                ttt.setmButton6("");
+                mButton6.setText("");
+                ttt.setmButton7("");
+                mButton7.setText("");
+                ttt.setmButton8("");
+                mButton8.setText("");
+                ttt.setmButton9("");
+                mButton9.setText("");
+                mPlayerNameT.setText(p1);
+                mButton1.setEnabled(true);
+                mButton2.setEnabled(true);
+                mButton3.setEnabled(true);
+                mButton4.setEnabled(true);
+                mButton5.setEnabled(true);
+                mButton6.setEnabled(true);
+                mButton7.setEnabled(true);
+                mButton8.setEnabled(true);
+                mButton9.setEnabled(true);
+            }
+        });
 
     }
 
@@ -287,7 +487,7 @@ public class Tictactoe_Layout extends AppCompatActivity {
         count++;
         if (count== 9){
             mTurnWin.setText(R.string.draw);
-            mPlayerNameT.setText(R.string.draw);
+            mPlayerNameT.setText("");
             mButton1.setEnabled(false);
             mButton2.setEnabled(false);
             mButton3.setEnabled(false);

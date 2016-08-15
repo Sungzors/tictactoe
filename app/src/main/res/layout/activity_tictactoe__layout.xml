@@ -15,7 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="30dp"
-        android:layout_gravity="top|right"
+        android:layout_gravity="top|center"
         android:padding="20dp">
 
         <TextView
@@ -33,7 +33,6 @@
             android:text="@string/turnwin"
             android:textSize="40sp"
             android:layout_gravity="end"
-            android:paddingRight="30dp"
             android:id="@+id/turnwin"
             android:textColor="@color/textcolor"/>
 
